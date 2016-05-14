@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<title>vertical-align</title>
+  <style>
+    .one     { display:block; }
+    .one *   { background: #ddd; }
+    td       { background: #ddd; height: 5em; }
+  </style>
+</head>
+<body>
+ 
+<!-- 1. -->
+  <p class="one">Dieser Text hat verschiedene Inline-Elemente, 
+  die bezüglich der Grundlinie wie folgt ausgerichtet sind: 
+    <b style="vertical-align:super">Erhöht wie Superscript</b>
+    <i style="vertical-align:sub">Abgesenkt wie Subscript</i>
+    <span style="vertical-align:baseline">Erscheint normal</span>
+  </p>
+ 
+<!-- 2. -->
+  <table>
+    <tr>
+      <td style="vertical-align:top">bündig oben</td>
+      <td style="vertical-align:middle">zentriert</td>
+      <td style="vertical-align:bottom">bündig unten</td>
+    </tr>
+  </table>
+ 
+ 
+</body>
+</html>

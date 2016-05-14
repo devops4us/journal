@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>My Template Application with AngularJS</title>
+	<script src="webjars/angularjs/1.5.5/angular.js"></script>
+	<script src="js/mycontroller.js"></script>
+	<link rel="stylesheet" href="jrnlstyle.css">
+</head>
+
+<body>
+
+<body ng-app="myapp" ng-controller="MyController">
+
+<h1>List of Angular model objects via data binding:</h1>
+
+<ul>
+	<li ng-repeat="item in items">
+	
+		<div class="entry-kw"> {{item.kw}}</div>
+	
+		<div class="entry-data1">
+			
+			<div class="entry-date">
+				<span class="static-text">Vom:</span> 
+				<span class="data">{{item.date}}</span>
+			</div>
+			
+			<div class="entry-project">
+				<span class="static-text">Projekt:</span>
+				<span class="data">{{item.project}}</span>
+			</div>
+			  
+		</div>		
+	</li>
+
+</ul>
+
+</body>
+</html>

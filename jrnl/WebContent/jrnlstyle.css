@@ -1,0 +1,38 @@
+@CHARSET "ISO-8859-1";
+
+ul {
+	list-style-type:none;
+	padding:0;
+	border: none;
+	
+}
+
+
+ul li {
+	margin-bottom:5px;
+}
+
+li div {	
+	display: inline-block;
+	margin-right:-4px;
+	line-height:45px;
+	vertical-align:middle;
+}
+
+
+
+
+li div.entry-kw {
+	width: 25px;
+	max-width: 25px;
+	background-color:#e6e6e6;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+li div.entry-data1 {
+	width: 100px;
+	max-width: 100px;
+	background-color:#e6e6e6;
+}
+
